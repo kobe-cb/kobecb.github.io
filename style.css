@@ -10,7 +10,37 @@
     --transition-speed: 600ms;
 
 }
-
+.flex-container {
+    /* 
+    >>tldr 
+        margin > padding 
+        justify-content = horizontal, align-items = vertical
+    >>FLEXBOX
+    display: flex;     <- sets container to be flexible (required)
+    flex-direction: ;  <- direction the container wants to STACK the flex items
+                       <- column, row, row-reverse, column-reverse
+    flex-wrap: ;       <- whether the flex items should wrap or not
+                       <- wrap, nowrap, wrap-reverse, 
+    flex-flow: ;       <- shorthand for setting both flex-direction and flex-wrap
+                       <- row wrap, ...
+    justify-content: ; <- used to align the flex items
+                       <- center, flex-start, flex-end, space-around, space-between
+    align-items: ;     <- used to align the flex items
+                       <- center, flex-start, flex-end, stretch, baseline (aligns the middle of a box)
+    align-content: ;   <- used to align the flex lines
+                       <- space-between, space-around, stretch, center, flex-start, flex-end
+    */
+    padding-left: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: DodgerBlue;
+}
+.flex-container > header {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 .secret {
     color: white;
 }
