@@ -10,6 +10,60 @@
     --transition-speed: 600ms;
 
 }
+.login_body {
+    margin: 0px;
+    background-color: #27a465;
+    color: #f7f7f7;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+/* # is for ID(Unique), . is for Classes(Not unique)*/
+#login_main {
+    width: 600px;
+    height: 260px;
+    border-radius: 5px;
+    border-top: 3px double #f1f1f1;
+    border-bottom: 3px dobule #f1f1f1;
+}
+
+#login_main table{
+    font-family: "Comic Sans MS", cursive;
+}
+
+#login_main .tb {
+    height: 28px;
+    width: 230px;
+    border:1px solid #27a465; 
+    color:#27a465;
+    font-weight:bold;
+    border-left:5px solid #f7f7f7; 
+    opacity:0.9;
+}
+
+#login_main .btn {
+    width: 80px;
+    height: 32px;
+    outline: none;
+    font-weight: bold;
+    border: 0px solid #27a465;
+    text-shadow: 0px 0.5px 0.5px #fff;
+    border-radius: 2px;
+    font-weight: 600;
+    color: #27a645;
+    letter-spacing: 1px;
+    font-size: 14px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+
+#login_main .btn:hover {
+    background-color: #27a645;
+    outline: none;
+    border-radius: 2px;
+    color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+}
 .flex-container {
     /* 
     >>tldr 
@@ -46,15 +100,49 @@
 }
 
 .secret2 {
-    color: white;
+    opacity: 0;
+}
+
+html {
+    min-height: 100%;
+    /*height: 100% "remove no-repeat in background body */
 }
 
 body {
     color: black;
-    background-color: white;
+    /*background-color: white;*/
+    /*background-image: url("test.png");*/
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat;
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
     margin: 0;    
     padding: 0;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.test  {
+    font-size: 50px;
+    text-align: center;
+}
+
+.test2 {
+    text-align: center;
+}
+
+
+
 
 /* custom scrollbar on right side*/
 body::-webkit-scrollbar {
